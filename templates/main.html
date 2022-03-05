@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Kalkulator Walut</title>
+</head>
+<body>
+    <form method="post" action="/currency_calculator/">
+        <label for="currency">Wybierz walutę:</label>
+
+            <select name="currency" id="currency">
+                {% for code in codes %}
+                <option value={{code}}>{{code}}</option>
+                {% endfor %}
+            </select>
+
+            <p></p>
+
+            <label for="amount">Ilość do wymiany:</label>
+            <input type="number" id="amount" name="amount"><br>
+            
+            <p></p>
+
+            <input type="submit" value="Przelicz">
+
+    </form>
+</body>
+</html>
