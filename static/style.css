@@ -1,0 +1,19 @@
+input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    align-self: auto;
+    width : 200px;
+    margin: 2px;
+    margin-left: 20px;
+    box-sizing: border-box;
+   
+  }
+input[type=number]{
+  margin-left: 25px;
+  
+}
+
+input[type=submit]{
+    margin-left: 0px;
+
+}
